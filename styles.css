@@ -3,10 +3,12 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: url('images/demonslayer.jpg') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  min-height: 100vh; /* Ensure full viewport height */
 }
 
 .header {
@@ -14,7 +16,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.719);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -22,18 +24,19 @@ body {
 
 .container {
   width: 90%;
-  margin-top: 120px;
-  padding: 20px;
+  padding: 10px;
   background: linear-gradient(to bottom right, #e25822, #ff7f00, #ff3300);
 }
 
 h1 {
   text-align: center;
+  font-size: 24px;
 }
 
 .question {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .options {
@@ -46,25 +49,21 @@ h1 {
 }
 
 .button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #1f1f1f; 
-  color: #ffffff; /* Change text color to contrast with the background */
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #1f1f1f;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;
   transition: background-color 0.3s;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .button:hover {
-  background-color: #333333; /* Change hover color if needed */
-}
-
-
-.button:hover {
-  background-color: #57a8f0;
+  background-color: #333333;
 }
 
 .result {
@@ -73,6 +72,6 @@ h1 {
   font-weight: bold;
 }
 
-.hide{
+.hide {
   display: none;
 }
