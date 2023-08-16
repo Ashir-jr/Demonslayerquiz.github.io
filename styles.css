@@ -23,8 +23,8 @@ body {
 }
 
 .container {
-  width: 90%;
-  padding: 10px;
+  width: 70%;
+  padding: 20px;
   background: linear-gradient(to bottom right, #e25822, #ff7f00, #ff3300);
 }
 
